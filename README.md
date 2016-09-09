@@ -1,9 +1,9 @@
 #ZynqLearning
-change the deconfig file wo use USB camera
-add these:
-CONFIG_VIDEO_DEV=y
-CONFIG_VIDEO_V4L2_COMMON=y
-CONFIG_VIDEO_MEDIA=y
-CONFIG_USB_VIDEO_CLASS=y
-CONFIG_V4L_USB_DRIVERS=y
-CONFIG_USB_VIDEO_CLASS_INPUT_EVDEV=y
+##Add these configures in the  deconfig file when we use the USB camera
+
+
+CONFIG_USB_SERIAL_CP210X=y
+
+CONFIG_USB_SERIAL_CH341=y
+
+CONFIG_MEDIA_USB_SUPPORT=y
